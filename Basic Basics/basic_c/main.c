@@ -3,8 +3,11 @@
 
 /* Basic hello world type programe */ 
 int main() {
-  
-  printf("Hello my name is Rhys\n");
+
+  printf("Enter your name\n");
+  char name[20];
+  scanf("%s",name);
+  printf("Hello my name is %s \n", name);
 
   return 0; 
 
