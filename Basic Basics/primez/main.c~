@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main (){
+
+  //print all primes from 3-100;
+  //print each prime seperate by a space
+
+  int primnes[100] = {2,3}; 
+  
+
+  
+  return 0; 
+}
