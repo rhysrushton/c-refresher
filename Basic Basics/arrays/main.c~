@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main () {
+  //an array allows you to group values together under a single name
+  
+  
+
+  return 0; 
+}
