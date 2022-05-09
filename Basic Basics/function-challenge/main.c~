@@ -1,0 +1,13 @@
+#inclide <stdio.h>
+
+float gcd (int a, int b) {
+  int reslult; 
+
+  
+  return result; 
+}
+
+int main () {
+  
+
+}
