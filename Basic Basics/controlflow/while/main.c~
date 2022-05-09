@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(){
+
+  //while this condition is true do this
+  
+  
+  return 0; 
+}

@@ -1,0 +1,16 @@
+#inlcude <stdio.h>
+
+int main(){
+
+  //if doesn't require {} if the body is a single statement
+  int score = 97;
+  int number = 2
+
+    if (score > number)
+      printf("Hey \n");
+
+  
+
+
+  return 0; 
+}

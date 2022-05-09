@@ -4,14 +4,16 @@
 int main(){
 
   //Enums values are assigned as ints
-  enum gender {male, female};
-  enum gender myGender;
+  enum company  {GOOGLE, FACEBOOK, XEROX, YAHOO, EBAY, MICROSOFT};
 
-  myGender = male;
+  enum company xerox, google, ebay;
+  xerox = XEROX;
+  google = GOOGLE;
+  ebay = EBAY;
 
+  printf("%d\n", xerox);
+  printf("%d\n", google);
+  printf("%d\n", ebay); 
   
-  // myGender = 37; 
-
-
   return 0; 
 }

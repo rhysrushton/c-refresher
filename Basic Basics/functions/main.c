@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void add(); 
 int main() {
   
   //think abut functions as a black box
@@ -23,8 +24,16 @@ int main() {
      function returns no value -> keyword void.
      next is the nameof the function: printMessage
      after that it takes no arguments (second use of the keyword void)
-  */ 
-   
+  */
+  // You also declare a function prototype which tells the compiler you will be using this particu     lar function.
+  // The protype is just the header ending in a semi-colon.
+  // voind printMessage (void);
+  // function protypes usually go in header files if they are being used in multiple files
+  // otherwise they go into the header.If you define function in header then no prototype needed. 
+  add();
+  
   
   return 0; 
 }
+
+void add() {}

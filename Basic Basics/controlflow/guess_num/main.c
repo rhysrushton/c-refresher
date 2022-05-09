@@ -7,7 +7,7 @@ int main(){
   time_t t;
   srand((unsigned)time(&t));
   int randomNumber = rand() %21;
-  int  guess_correct = 0; 
+  
   printf("%d\n", randomNumber);
   int guess_count, guess;
   guess_count = 0; 
@@ -15,7 +15,7 @@ int main(){
   printf("Please enter your guess \n");
   scanf("%d", &guess);
 
-  while ((guess != randomNumber) &&( guess_count < 5)) {
+  while ((guess != randomNumber) &&( guess_count < 4)) {
     while ((guess< 0) || (guess > 20)) {
       printf("Enter a number within correct range\n");
       guess_count ++; 
@@ -29,20 +29,17 @@ int main(){
       printf("Too low!\n"); 
       
     }
-    else {
-      guess_correct = 1; 
-      break; 
-    }
+    
 
     guess_count ++;
     printf("please enter your guess \n");
     scanf("%d", &guess); 
   }
 
-  if( guess_correct == 1)
-    printf("You got it\n"); 
-  else
+  if( guess == randomNumber){
+    printf("You got it\n");} 
+  else{
     printf("Out of goes\n"); 
-  
+  }
   return 0; 
 }
