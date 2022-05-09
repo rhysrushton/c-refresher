@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+  
+  //think abut functions as a black box
+  // When designing code don't worry about writing function code
+  // just think about what the function is supposed to do 
+
+  return 0; 
+}
