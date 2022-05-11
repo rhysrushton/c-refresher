@@ -29,7 +29,23 @@ int main() {
   // it requires two arguments.
   // the string to be tokenized
   // a string containing all the possible delimiter characters
-  
+  char arr[80] = "Hello, how are you-my name is-jason";
+  const char s[2] = "-";
+  char *token;
+
+  /*get the first token */
+  token = strtok(arr,s);
+
+  /* walk through other tokens */
+  while (token != NULL) {
+    printf(" %s\n", token);
+
+    token =  strtok(NULL, s); 
+    // the reason why you pass null is that strtok has an internal pointer of where it left off
+    // and by specifying null you are telling the function to pick up where it left off.
+    
+
+  }
 
   return 0; 
 }
