@@ -14,7 +14,7 @@ int main () {
   // will take up one space too.
   char word[] = {'H', 'e', 'l','l','o'};
   // 'H', 'e', 'l', 'l', 'o' '\o'
-  char words [] {"Hello stranger"};
+  char words []= {"Hello stranger"};
   //best practice is to let compiler figure out size for you.
   // when you are performing an assignment operation you cannot assign one array of characters
   // to another array of characters
@@ -34,9 +34,37 @@ int main () {
   // can also create constants with enums
   // string functions:
   // strlen -> get the length of a string
-  // strcpy -> copy a string
-  // strcat() combining two strings
+  // strncpy -> copy a string
+  // strncat() combining two strings
   // determine whether two character strings are equal strcmp()
+  // strcmp returns 0 if its two arguments are the same and nonzero otherwise
+  // if return value < 0 then it indicates str1 is less than str2
+  // if return value > 0 then it indicates str2 is less than str1  
   // all of the above are included in string.h file 
+  
+  char myString[] = "my string";
+  printf("The length of this string is: %ld\n", strlen(myString));
 
+  // You cannt assign arrays in c therefore you cannot assign strings either
+  // char s[100]; //declare
+  // s = "hello" // initialize - This doesn't work.
+  // We can use strcpy() instead.
+  // char src[50], dest[50];
+  // strcpy(src, "This is source");
+  // strcpy(dest, "This is destination");
+  /* Searching for a string
+     strchr(), strstr()
+  */
+  /* Tokenizing a string
+     a token is a sequence of characters within a string that is bounded by a delimiter
+     i.e. a space, comma, period. 
+     breaking a sentnce into words is called tokenizing
+     strtotk()
+     
+   */
+  /* Analyzing strings
+    islower(), isupper(), isupper(), isalpha(), isdigit()
+  */
+  
+  
 }
