@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 int main () {
 
   // '' single quote is characters
@@ -24,7 +26,17 @@ int main () {
     'x' is a basic type (char) 
     "x" is a derived type, an array of char
     "x" realy consists of two characters, 'x' and '\0', the null character
-  */ 
-
+  */
+  // can use strings as constants (values that don't change)
+  // # define THISISCONSTAT 0.20
+  // can also use the const keyword
+  // const int MONTHS = 12;
+  // can also create constants with enums
+  // string functions:
+  // strlen -> get the length of a string
+  // strcpy -> copy a string
+  // strcat() combining two strings
+  // determine whether two character strings are equal strcmp()
+  // all of the above are included in string.h file 
 
 }
