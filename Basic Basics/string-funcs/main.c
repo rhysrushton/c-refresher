@@ -20,9 +20,10 @@ void reverse(char * str_to_reverse) {
 }
 
 
+  
+
 int main() {
-  // reverse a string
-  // needs to read import from the keyboard.
+ 
   // sort the strings of an array using strcmp and strcpy functions.
   // use bubble sort to sort the strings.
   // ask people how many strings they want to read in.
@@ -34,7 +35,43 @@ int main() {
   //printf("The string you are reversing is \"%s\" \n", str_to_reverse);
 
   reverse(str_to_reverse); 
+
   
+  int num_words; 
+  printf("How many words would you like to sort?\n");
+  scanf("%d", &num_words);
+  printf("Please enter the words you would like to sort\n"); 
+  char arr[num_words][MAX_WORD_LENGTH];
+  int i;
+  for(i =0; i < num_words; i++) {
+    scanf("%s", arr[i]); 
+
+  }
+
+  printf("Here are your words\n");
+  int j;
+  for(j=0; j<num_words; j++) {
+
+    printf("%s\n", arr[j]);    
+  }
+
+
+  char temp[MAX_WORD_LENGTH]; 
+  
+  for(i=1; i<=num_words; i++)
+    for(j=0;j<=num_words-i;j++)
+      if(strcmp(arr[j],arr[j+1])>0)
+	{
+	  strcpy(temp,arr[j]);
+	  strcpy(arr[j], arr[j+1]);
+	  strcpy(arr[j+1], temp); 
+	}
+  printf("Here are your words sorted\n");
+  
+  for(j=0; j<num_words; j++) {
+
+    printf("%s\n", arr[j]);    
+  }  
   
   return 0; 
 }
