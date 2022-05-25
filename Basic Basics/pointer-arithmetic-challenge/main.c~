@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int count (char * start; char * stop) {
+
+
+
+  return 0; 
+}
+
+
+
+
+void main (void) {
+
+
+
+
+
+
+
+}

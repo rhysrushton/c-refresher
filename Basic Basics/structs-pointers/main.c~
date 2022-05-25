@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main () {
+  
+  
+  
+  return 0; 
+}
+
+
+// we can point to structures in c
+// pointers to structs are eassier to manipulate than structsx

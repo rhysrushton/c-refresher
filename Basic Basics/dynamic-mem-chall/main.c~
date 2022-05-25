@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h> 
+
+int main () {
+
+  int size;
+  printf("Please enter the number of bytes \n");
+  scanf("%d", &size);
+  char * str;
+  str = (char *)malloc(size); 
+
+
+  return 0; 
+}
